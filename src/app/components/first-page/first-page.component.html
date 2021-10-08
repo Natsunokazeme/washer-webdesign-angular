@@ -1,0 +1,21 @@
+<app-header></app-header>
+<div id="first-page-main">
+    <img id="main-bg" src="../../../assets/main-bg.png" alt="">
+    <div id="first-page-tittle">Suchen & Finden</div>
+    <div id="description">
+        Wähle dein Eikett aus und finde heraus, was
+        es bedeutet und wie man die Kleidung auf die richtige Art und Weise wäscht.
+    </div>
+    <ul id="first-page-icons">
+        
+        <li class="first-page-icon"  *ngFor="let item of icons"  (click)='select(item)' [class.selected]=item.isSelected >
+            <img [src]=item.svgUrl alt="">
+        </li>
+
+    </ul>
+    <a id="button" [routerLink]="['/second-page']" routerLinkActive="router-link-active"   target="_self" >
+        Nächster Schritt
+    </a>
+    
+</div>
+<app-footer></app-footer>

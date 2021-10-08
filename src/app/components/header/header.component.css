@@ -1,0 +1,9 @@
+#header-main{
+    background-color: #4390ED;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;    
+}
+#header-main img{
+    height: 45px;
+}
